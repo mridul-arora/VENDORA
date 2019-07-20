@@ -1,10 +1,5 @@
 package com.example.Vendora;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.FragmentActivity;
-
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -16,10 +11,13 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.directions.route.Route;
 import com.directions.route.RouteException;
-
 import com.directions.route.RoutingListener;
 import com.example.cab.R;
 import com.firebase.geofire.GeoFire;
