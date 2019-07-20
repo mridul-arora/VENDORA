@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesranew"
+    tools:context="com.example.Vendora.VendorLoginRegisterActivity">
+
+
+    <TextView
+        android:id="@+id/vendor_status"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="456dp"
+        android:text="@string/vendor_login"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email_vendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="370dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/password_vendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="310dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/vendor_login_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/login"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vendor_register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/vendor_login_btn"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="530dp"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/vendor_register_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:text="@string/register"
+
+
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="550dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+</RelativeLayout>

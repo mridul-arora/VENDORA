@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Vendora.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimaryDark">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_button"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/close"
+                    android:tint="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/save_button"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/save_edited_info"
+                    android:tint="@android:color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#c880ff"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+    android:id="@+id/change_picture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:text="Change Picture"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:layout_below="@+id/change_picture_btn"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="Your Phone Number"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/vendor_thela_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your cart number"
+        android:layout_below="@+id/phone_number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+       android:visibility="gone"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <RadioButton
+            android:id="@+id/Vegetable_Vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetables Vendor">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/Fruits_Vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fruits Vendor">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/Chaat_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chaat Vendor">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+</RelativeLayout>

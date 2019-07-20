@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mesranew"
+    tools:context="com.example.Vendora.CustomerLoginRegisterActivity">
+
+    <TextView
+        android:id="@+id/customer_status"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="255dp"
+        android:text="Customer Login"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <EditText
+                android:id="@+id/email_customer"
+                android:layout_width="422dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="323dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/password_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customer_status"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textColorHint="@android:color/background_light" />
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/customer_login_btn"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/password_customer"
+        android:layout_alignEnd="@+id/customer_register_link"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="163dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="Login"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/customer_register_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="Don't have an Account"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/customer_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:text="Register"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

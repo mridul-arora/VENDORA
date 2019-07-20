@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VENDORA</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_vendor_login_register">Vendor_login_register</string>
+    <string name="title_activity_vendors_maps">Map</string>
+    <string name="i_m_a_vendor">I\'M A VENDOR</string>
+    <string name="i_m_a_customer">I\'m a customer</string>
+    <string name="vendor_login">Vendor Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an Account</string>
+    <string name="register">Register</string>
+    <string name="title_activity_customers_map">Map</string>
+    <string name="settings">SETTINGS</string>
+    <string name="logout">LOGOUT</string>
+    <string name="call_a_vendor">CALL A VENDOR</string>
+</resources>
