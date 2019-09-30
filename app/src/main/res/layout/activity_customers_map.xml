@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.Vendora.CustomersMapActivity"
+    tools:context="com.example.cab.CustomersMapActivity"
     android:background="@color/colorPrimaryDark">
 
     <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -18,46 +18,113 @@
         android:layout_above="@+id/customer_call_vendor_btn" />
 
 
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/customer_call_vendor_btn"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
+        android:layout_marginBottom="0dp">
 
-
-
-        <RadioButton
-            android:id="@+id/Vegetable_Vendor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vegetables Vendor"
-            android:background="@android:color/white">
-
-        </RadioButton>
-
-
-        <RadioButton
-            android:id="@+id/Fruits_Vendor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fruits Vendor"
-            android:background="@android:color/white">
-
-        </RadioButton>
-
-        <RadioButton
-            android:id="@+id/Chaat_Vendor"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chaat Vendor"
-            android:background="@android:color/white">
+            android:orientation="horizontal">
 
-        </RadioButton>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/customer_call_vendor_btn"
+                android:layout_alignTop="@+id/map"
+                android:layout_alignBottom="@+id/map"
+                android:layout_marginTop="437dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
 
-    </RadioGroup>
+
+                <RadioButton
+                    android:id="@+id/Vegetable_Vendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Vegetables Vendor">
+
+                </RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/Fruits_Vendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Fruits Vendor">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Chaat_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Chaat Vendor">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/StreetFood_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Street Food Vendor">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/IceCream_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Ice Cream Vendor">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/HouseholdHawkers_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Household Hawkers">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Pickle_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Pickle Vendor">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Clothes_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Clothes Vendor"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/ShakesandSofty_Vendor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="Shakes and Softy Vendor">
+
+                </RadioButton>
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <RelativeLayout
 
