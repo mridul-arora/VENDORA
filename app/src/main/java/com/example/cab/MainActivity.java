@@ -1,4 +1,4 @@
-package com.example.Vendora;
+package com.example.cab;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;

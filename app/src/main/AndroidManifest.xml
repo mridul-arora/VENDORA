@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.example.Vendora.SettingsActivity"/>
+        <activity android:name="com.example.cab.SettingsActivity"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -36,17 +36,17 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example.Vendora.CustomersMapActivity"
+            android:name="com.example.cab.CustomersMapActivity"
             android:label="@string/title_activity_customers_map" />
         <activity
-            android:name="com.example.Vendora.VendorsMapsActivity"
+            android:name="com.example.cab.VendorsMapsActivity"
             android:label="@string/title_activity_vendors_maps" />
-        <activity android:name="com.example.Vendora.VendorLoginRegisterActivity" />
-        <activity android:name="com.example.Vendora.CustomerLoginRegisterActivity" />
-        <activity android:name="com.example.Vendora.WelcomeActivity" />
+        <activity android:name="com.example.cab.VendorLoginRegisterActivity" />
+        <activity android:name="com.example.cab.CustomerLoginRegisterActivity" />
+        <activity android:name="com.example.cab.WelcomeActivity" />
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
-        <activity android:name="com.example.Vendora.MainActivity">
+        <activity android:name="com.example.cab.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

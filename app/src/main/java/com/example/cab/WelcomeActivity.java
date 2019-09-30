@@ -1,4 +1,4 @@
-package com.example.Vendora;
+package com.example.cab;
 
 import android.Manifest;
 import android.content.Intent;

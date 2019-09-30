@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Vendora.SettingsActivity">
+    tools:context="com.example.cab.SettingsActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_settings"
@@ -107,6 +107,15 @@
        android:visibility="gone"
         />
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number">
+    <LinearLayout
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
@@ -141,6 +150,59 @@
 
         </RadioButton>
 
+        <RadioButton
+            android:id="@+id/StreetFood_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Street Food Vendor">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/IceCream_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Ice Cream Vendor">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/HouseholdHawkers_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Household Hawkers">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/Pickle_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Pickle Vendor">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/Clothes_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Clothes Vendor"></RadioButton>
+        <RadioButton
+            android:id="@+id/ShakesandSofty_Vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Shakes and Softy Vendor">
+
+        </RadioButton>
+
+
     </RadioGroup>
+    </LinearLayout>
+    </HorizontalScrollView>
 
 </RelativeLayout>
